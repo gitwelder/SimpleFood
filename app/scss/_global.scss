@@ -1,0 +1,91 @@
+body {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $deafault;
+  background-color: #f9faff;
+  @extend %rubik-400;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.animation {
+  transition: color 0.4s ease-in-out, box-shadow 0.2s linear, text-shadow 0.2s linear;
+}
+
+.animation:hover {
+  color: $orange;
+}
+
+.animation:focus {
+  box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+  border-radius: 5px;
+}
+
+.animation:active {
+  text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+}
+
+.animation-1 {
+  transition: box-shadow 0.6s linear,
+  color 0.5s ease-in-out,
+  background-color 0.4s linear;
+}
+
+.animation-1:hover {
+  box-shadow: 0 5px 12px rgba(255, 104, 56, 0.2), 0 0 0 2px rgba(255, 104, 56, 0.7);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $orange;
+}
+
+.animation-1:focus {
+  background-color: rgba(255, 122, 80, 0.1);
+  box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+  border-radius: 5px;
+  color: $orange;
+}
+
+.animation-1:active {
+  background-color: rgba(255, 122, 80, 0.1);
+  border-radius: 5px;
+  color: $orange;
+}
+
+.logo {
+  transition: opacity 0.4s linear,box-shadow 0.3s linear;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:focus {
+  box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+  border-radius: 5px;
+}
+
+.logo:active {
+  opacity: 0.5;
+}
